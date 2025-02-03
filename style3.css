@@ -1,0 +1,51 @@
+div {
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+
+
+
+}
+
+.child1 {
+    height: 85px;
+    width: 85px;
+    background-color: blue;
+}
+
+.translate:hover~.child1 {
+    animation: transform 5s ease-in-out;
+    transform: translate(100px);
+
+}
+
+.scale:hover~.child1 {
+    animation: scale 5s ease-in-out;
+    transform: scale(1.7);
+
+}
+
+.rotate:hover~.child1 {
+ 
+    transform: rotate(90deg);
+
+}
+
+.skew:hover~.child1 {
+    animation: transform 5s ease-in-out;
+    transform: skew(50deg);
+
+}
+input{
+    cursor: pointer;
+}
+
+ 

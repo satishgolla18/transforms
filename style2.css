@@ -1,0 +1,50 @@
+div {
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 15px;
+    /* animation: transform 10s alternate; */
+
+}
+
+.child1,
+.child2,
+.child3,
+.child4 {
+    height: 100px;
+    width: 100px;
+}
+
+.child1 {
+    background-color: blue;
+    animation: transform 1s ease 0s infinite;
+}
+
+.child2 {
+    background-color: blueviolet;
+    animation: transform 1s ease 0.5s infinite;
+}
+
+.child3 {
+    background-color: bisque;
+    animation: transform 1s ease 1s infinite;
+}
+
+.child4 {
+    background-color: brown;
+    animation: transform 1s ease 1.5s infinite;
+}
+
+@keyframes transform {
+    from {
+        height: -50px;
+    }
+
+    to {
+        height: 300px;
+    }
+}
